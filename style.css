@@ -1,0 +1,605 @@
+*{
+    margin: 0%;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+.body{
+    width: 100%;
+    height: 100vh;
+    background-color:rgb(0, 0, 0);
+   
+}
+hr{
+background:linear-gradient(to right,purple ,purple,purple);
+height: 2px;
+border: .1px solid black;
+outline: none;
+}
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Navbar for PC<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+.header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 10vh;
+    background-color: rgb(0, 0, 0);
+    animation: slideIn 2s;
+   transition: 2s;
+   position: fixed;
+ width: 100%;
+ z-index: 9999;
+   
+}
+.header:hover{
+    border-bottom: 2px solid purple;
+    box-shadow: 0 0 10px purple, 0 0 20px purple,0 0 40px purple,0 0 80px purple,0 0 160px purple,0 0 260px purple,0 0 340px purple;
+}
+.portfolio{
+    color: white;
+    animation: fadeIn 5s;
+    cursor: default;
+}
+.portfolio h1{
+    background: linear-gradient(to right,rgb(255, 0, 255),rgba(255, 0, 255, 0.7),rgba(255, 0, 255),rgba(255, 0, 255, 0.7),rgb(255, 0, 255));
+background-clip: text;
+color: transparent;
+}
+
+.navlinks{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    animation:fadeIn 5s;
+}
+
+.nav-links{
+    width: 40%;
+     
+}
+
+.navlinks li a{
+    text-decoration: none;
+    color: white;
+    transition: 0.5s;
+    font-style: bold;
+    transition: .5s;
+}
+@keyframes slideIn{
+    0%{
+        transform:translateY(-100%);
+    }
+    100%{
+        transform:translateY(0);
+    }
+}
+.navlinks li a:hover {
+color: rgb(255, 0, 255);
+text-shadow: 0 0 10px rgb(255, 0, 255), 0 0 20px rgb(255, 0, 255)0 0 40px rgb(255, 0, 255),0px 0px 60px rgb(255, 0, 255),0 0 80px rgb(255, 0, 255),0 0 160px rgb(255, 0, 255);
+}
+
+/* ----------------------------------------------------------Home------------------------------------------------------ */
+.home {
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+}
+.home-container{
+display: flex;
+justify-content: space-between;
+align-items: center;
+width: 80%;
+margin-top: 10vh;
+}
+
+.box{
+    height: 270px;
+    width: 490px;
+ transition: .5s;
+color: white;
+border-radius: 20px;
+padding: 10px;
+cursor: default;
+border:2px solid purple ;
+  transition: .5s;
+  background:linear-gradient(300deg,rgb(255, 158, 255),rgb(255, 73, 255),rgb(255, 0, 255));
+animation: slide 2s;
+}
+.box:hover{
+    box-shadow: 0 0 10px purple, 0 0 20px purple,0 0 40px purple,0 0 80px purple,0 0 160px purple;
+   background: transparent;
+    color: purple;
+  
+}
+@keyframes slide{
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+.box h2{
+font-size: 30px;
+}   
+    
+.box h1{
+/* margin-top:px; */
+font-size: 50px;
+}
+.box p{
+margin-top: 10px;
+font-size: 20px;
+}
+
+.connections{
+    /* background-color: aqua; */
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+margin-top: 13px;
+animation:connection-fadein 3s ;
+}
+.connections a {
+    height: 50px;
+    width: 50px;
+    border: 2px solid purple;
+    border-radius: 100px;
+    margin-left: 15px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+transition: .5s;
+
+}
+.connections a:hover {
+    box-shadow: 0 0 10px purple,0 0 40px purple,0 0 80px purple;
+
+}
+.connections a .logo{
+    height: 60%;
+    width: 60%;
+}
+@keyframes connection-fadein{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 5;
+    }
+}
+
+.cv{
+    text-decoration: none;
+    padding: 20px  40px 20px;
+    background-color:purple;
+    border-radius: 10px;
+ 
+color: white;
+font-weight: bold;
+margin-left: 30px;
+border: 2px solid purple;
+transition: 0.5s;
+animation:connection-fadein 3s ;
+}
+.cv:hover{
+    border: 2px solid purple;
+    color: purple;
+    background-color: transparent;
+box-shadow:0 0 10px purple,0 0 20px purple,0 0 40px purple,0 0 80px purple,0 0 160px purple;
+}
+@keyframes slideUP{
+    0%{
+        transform: translateY(-100px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+
+}
+
+.img img {
+    height:460px ;
+    width:230px ;
+    transition: .5s;
+    animation: img-slide 2s;
+}
+.img img:hover {
+    filter: drop-shadow(0px 0px 60px purple);
+}
+@keyframes img-slide{
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ about us ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.About-us{
+    height: 100vh;
+    width: 100%;
+    background-color:black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about{
+    font-size: 40px;
+
+}
+.about span{
+    color: rgb(255, 0, 255);
+}
+.about-main{
+    height: 70%;
+    width: 90%;
+    cursor: default;
+    animation: AboutUs-pulse 3s;
+}
+.about   {
+    color: white;
+}
+.about-main h4 {
+    margin-top: 10px;
+    font-size: 30px;
+color: whitesmoke;
+}
+.about-main p {
+    font-size: 25px;
+    color: white;
+}
+.about-main a{
+    text-decoration: none;
+    padding: 20px  40px 20px;
+    background-color:purple;
+    border-radius: 10px;
+color: white;
+font-weight: bold;
+margin-left: 30px;
+border: 2px solid purple;
+transition: 0.5s;
+}
+.about-main a:hover{
+    border: 2px solid purple;
+    color: purple;
+    background-color: transparent;
+box-shadow:0 0 10px purple,0 0 20px purple,0 0 40px purple,0 0 80px purple,0 0 160px purple;
+}
+.about-main::before{
+    opacity: 0.5;
+
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Service's ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+.Service{
+height: 100vh;
+width: 100%;
+background-color: black;    
+
+}
+
+.service-h1{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    color: white;
+    font-size: 40px;
+    padding-top: 14vh;
+}
+.service-h1 span{
+    color: purple;
+
+}
+.card-list{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80vh;
+}
+.card{
+    background-color: black;
+    height: 350px;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+padding: 15px;
+border-radius: 20px;
+border-top: 5px solid purple;
+border-bottom: 5px solid purple;
+transition: 0.5s;
+cursor: default;
+}
+.card:hover{
+    border: 2px solid purple;
+    height: 360px;
+    width: 26%;
+}
+.card img {
+    height: 100px;
+    width: auto;
+    margin-top: 10px;
+}
+.card h1{
+    color: white;
+font-size: 30px;
+margin-top: 20px;
+transition: 1.5s;
+
+}
+.card h1 span {
+    color:purple;
+transition: 1.5s;
+
+}
+.card:hover h1{
+    color: purple;
+}
+.card:hover  h1 span{
+    color: white;
+}
+.card p {
+    color: white;
+    margin-top: 20px;
+}
+.card a {
+    margin-top: 20px;
+    padding: 20px 30px 20px;
+    text-decoration: none;
+color: white;
+background-color: purple;
+border-radius: 15px;
+transition: .5s;
+border: 2px solid purple;
+
+}
+
+.card a:hover {
+    border: 2px solid purple;
+background-color: transparent;
+box-shadow: 0 0 10px purple,0 0 40px purple,0 0 80px purple;
+}
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Portfolio ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+.portfolios{
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+}
+.My-project{
+    padding-top: 10vh;
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+}
+.My-project h1{
+    color: white;
+    font-size: 40px;
+}
+.My-project h1 span{
+    color: rgb(255, 0, 255);
+}
+.projects1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+
+}
+.projects2{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 80px;
+}
+.project{
+    background-color: rgb(255, 0, 255);
+    height: 150px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+border-radius: 20px;
+cursor: pointer;
+transition: .5s;
+
+}
+.project:hover
+{
+box-shadow: 0 0 10px purple,0 0 40px purple,0 0 80px purple;
+
+
+}
+.project h1 {
+    display: none;
+    transition: .5s;
+}
+.project p {
+    display: none;
+    transition: .5s;
+
+}
+.project:hover h1 {
+    display: block;
+}
+
+.project:hover p {
+    display: block;
+}
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Slider ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+.sliders{
+    min-height: 50vh;
+    display: grid;
+    place-items: center;
+overflow: hidden;
+background-color: black;
+}
+ .my{
+color: white;
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 40px;
+background-color: black;
+cursor: default;
+}
+.my h1 span{
+    color:rgb(255, 0, 255) ;
+}
+.slider{
+    height: 200px;
+    margin: auto;
+    position: relative;
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+.slide-track{
+    display: flex;
+    width: calc(200px*26);
+    animation:scroll 40s linear infinite;
+}
+.slide-track:hover{
+animation-play-state: paused;
+}
+@keyframes scroll{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(calc(-250px * 13));
+    }
+}
+.slide{
+    height: 200px;
+    width: 500px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 15px;
+    perspective: 100px;
+}
+.slide img{
+    width:100%;
+    transition: 1.5s;
+}
+.slide img:hover{
+    transform:translateZ(20px);
+}
+.abc {
+    transition: 0.5s;
+    padding-top: 2px;
+}
+
+.slide:hover  .abc{
+    color: rgb(255, 0, 255);
+   font-size: 20px;
+}
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Contact ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+.Contact{
+    height: 95vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 10vh;
+    background-color: black;
+    cursor: default;
+}
+.Contact h1 {
+    font-size: 40px;
+color: white;
+}
+.Contact h1 span{
+    color: rgb(255, 0, 255);
+}
+.contact-main{
+    margin-top: 20px;
+    height: 400px;
+    width: 700px;
+}
+.contact-main input{
+    height: 40px;
+    width: 45%;
+    border: none;
+    padding: 10px;
+border-radius: 10px;
+font-size: 17px;
+background-color: black;
+box-shadow: -3px -3px 7px #ffffff42
+,3px 3px 7px rgb(0, 0, 0);
+outline: none; 
+color: white;
+/* font-weight: bold; */
+}
+.contact-main input:focus{
+    border: 1px solid rgb(255, 0, 255);
+}
+#mobile{
+margin-top: 10px;
+
+}
+#email{
+margin-top: 10px;
+}
+#message{
+    margin-top: 10px;
+    width: 94%;
+    padding-bottom: 180px;
+
+}
+#mobile::-webkit-inner-spin-button,
+#mobile::-webkit-outer-spin-button{
+    -webkit-appearance: none;
+}
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Trade Mark ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+.trademark{
+    background-color: rgb(255, 0, 255);
+        height: 10vh;
+    width: 100%;
+
+}
+.trademark ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+    width: 100%;
+}
+.trademark ul li {
+    height: 50px;
+    align-items: center;
+    display: flex;
+}
+.arrow{
+    background-color: white;
+padding: 5px;
+border-radius: 5px;
+height: 20px;
+transition: all ease 1s;
+}
+.arrow:hover{
+box-shadow: 0 0 10px white,0 0 30px white,0 0 100px white;
+}
+.arrow img {
+    height: 20px;
+
+}
+
+
+
+
+
+
