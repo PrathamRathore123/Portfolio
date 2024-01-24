@@ -86,6 +86,7 @@ display: flex;
 justify-content: center;
 align-items: center;
 height: 100vh;
+overflow: hidden;
 }
 .home-container{
 display: flex;
@@ -180,13 +181,13 @@ transition: .5s;
     padding: 20px  40px 20px;
     background-color:purple;
     border-radius: 10px;
- 
-color: white;
+     color: white;
 font-weight: bold;
 margin-left: 30px;
 border: 2px solid purple;
 transition: 0.5s;
 animation:connection-fadein 3s ;
+text-align: center;
 }
 .cv:hover{
     border: 2px solid purple;
@@ -349,6 +350,7 @@ transition: 1.5s;
 .card p {
     color: white;
     margin-top: 20px;
+    overflow: hidden;
 }
 .card a {
     margin-top: 20px;
@@ -405,7 +407,7 @@ box-shadow: 0 0 10px purple,0 0 40px purple,0 0 80px purple;
 .project{
     background-color: rgb(255, 0, 255);
     height: 150px;
-    width: 300px;
+    width: 23%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -525,10 +527,13 @@ color: white;
 .Contact h1 span{
     color: rgb(255, 0, 255);
 }
+.contacts{
+    
+}
 .contact-main{
     margin-top: 20px;
     height: 400px;
-    width: 700px;
+    width: 50%;
 }
 .contact-main input{
     height: 40px;
@@ -597,8 +602,40 @@ box-shadow: 0 0 10px white,0 0 30px white,0 0 100px white;
     height: 20px;
 
 }
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  media query  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<  */
+@media (max-width:1200px) {
+.portfolio{
+    display: none;
+}}
 
+@media (max-width:1000px) {
+.header{
+    display: none;
+}
+.img{
+    display: none;
+}
+.content
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
+}
+.home{
+    justify-content: center;
+  
+}
+.home-container{
+justify-content: center;
+}
+.connections{
+    justify-content: center;
+}
+.cv{
+    
+}
+}
 
 
 
