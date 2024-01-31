@@ -85,15 +85,16 @@ text-shadow: 0 0 10px rgb(255, 0, 255), 0 0 20px rgb(255, 0, 255)0 0 40px rgb(25
 display: flex;
 justify-content: center;
 align-items: center;
-height: 100vh;
+height: auto;
 overflow: hidden;
+
 }
 .home-container{
 display: flex;
 justify-content: space-between;
 align-items: center;
 width: 80%;
-margin-top: 10vh;
+margin: 10vh 0vh;
 }
 
 .box{
@@ -210,6 +211,7 @@ box-shadow:0 0 10px purple,0 0 20px purple,0 0 40px purple,0 0 80px purple,0 0 1
     width:230px ;
     transition: .5s;
     animation: img-slide 2s;
+    cursor:pointer;
 }
 .img img:hover {
     filter: drop-shadow(0px 0px 60px purple);
@@ -225,7 +227,7 @@ box-shadow:0 0 10px purple,0 0 20px purple,0 0 40px purple,0 0 80px purple,0 0 1
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ about us ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 .About-us{
-    height: 100vh;
+    height: auto;
     width: 100%;
     background-color:black;
     display: flex;
@@ -240,10 +242,11 @@ box-shadow:0 0 10px purple,0 0 20px purple,0 0 40px purple,0 0 80px purple,0 0 1
     color: rgb(255, 0, 255);
 }
 .about-main{
-    height: 70%;
+    height: auto;
     width: 90%;
     cursor: default;
     animation: AboutUs-pulse 3s;
+    margin: 100px 0px;
 }
 .about   {
     color: white;
@@ -307,6 +310,7 @@ background-color: black;
 }
 .card{
     background-color: black;
+    text-align: center;
     height: 350px;
     width: 25%;
     display: flex;
@@ -318,6 +322,7 @@ border-top: 5px solid purple;
 border-bottom: 5px solid purple;
 transition: 0.5s;
 cursor: default;
+
 }
 .card:hover{
     border: 2px solid purple;
@@ -629,16 +634,62 @@ box-shadow: 0 0 10px white,0 0 30px white,0 0 100px white;
     justify-content: center;
 
 }
-.home{
-    justify-content: center;
-  
-}
 .home-container{
 justify-content: center;
 }
 .connections{
     justify-content: center;
 }
+.home{
+    justify-content: center;
+  height: auto;
+}
+
+.Service{
+    height: auto;
+}
+.card-list{
+    flex-direction: column;
+    height: auto;
+    padding: 100px 0px;
+    gap: 30px;
+
+}
+.card{
+    width: 40%;
+    height: auto;
+}
+
+
+
+}
+@media (max-width:600px) {
+    .box{
+        width: 90%;
+        overflow-x: hidden;
+    }
+}
+@media (max-width:900px) {
+    .Contact{
+        height: auto;
+        padding: 100px 0px;
+    
+    }
+    .contact-main{
+        height: auto;
+   margin-top: 50px;
+      
+    }
+    .contact-main input{
+        width: 100%;
+
+    }
+    #message{
+        width: 100%;
+    }
+    .cv1{
+        margin-top: 50px;
+    }
 
 }
 
