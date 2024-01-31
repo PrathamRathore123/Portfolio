@@ -528,8 +528,13 @@ color: white;
     color: rgb(255, 0, 255);
 }
 .contacts{
-    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
 }
+
 .contact-main{
     margin-top: 20px;
     height: 400px;
@@ -600,7 +605,9 @@ box-shadow: 0 0 10px white,0 0 30px white,0 0 100px white;
 }
 .arrow img {
     height: 20px;
-
+}
+.cv1{
+    width: 50%;
 }
 /*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  media query  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<  */
 @media (max-width:1200px) {
@@ -632,9 +639,7 @@ justify-content: center;
 .connections{
     justify-content: center;
 }
-.cv{
-    
-}
+
 }
 
 
