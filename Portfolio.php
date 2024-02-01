@@ -24,7 +24,19 @@
             </div>
         </div>
 
-        <section class="home" id="home">
+        <section class="holder" id="home">
+<div class="navbar3">
+    <h1 class="port1">Portfolio</h1>
+    <div class="nav-icons">
+       <a href="#home"><img src="./social/home-regular-240.png" alt="" > <h3>Home</h3></a>
+       <a href="#about"><img src="./social/about.png" alt="" > <h3>About</h3></a>
+       <a href="#service"><img src="./social/setting.png" alt="" > <h3>Service</h3></a>
+       <a href="#portfolio"><img src="./social/portfolio.png" alt="" ><h3>Project</h3></a>
+       <a href="#contact"><img src="./social/contact-solid-240.png" alt="" ><h3>Contact</h3></a>  
+
+    </div>
+</div>
+<div class="home">
             <div class="home-container">
                 <div class="content">
                     <div class="box">
@@ -54,7 +66,7 @@
                 <div class="img">
                     <img src="remove.png" alt="">
                 </div>
-            </div>
+            </div></div>
         </section>
 
 
